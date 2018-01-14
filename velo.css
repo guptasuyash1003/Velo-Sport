@@ -1,0 +1,202 @@
+
+
+.carousel-inner >.item >img,.carousel-inner >.item >a >img{
+ display:block; 
+ max-width:100%; 
+ height:auto
+ }
+
+ .img-thumbnail{ 
+ 	padding:4px; 
+ 	line-height:1.42857143; 
+ 	background-color:#fff; 
+ 	border:1px solid #ddd; 
+ 	-webkit-transition:all 0.2s ease-in-out; 
+ 	transition:all 0.2s ease-in-out; display:inline-block; 
+ 	max-width:100%; 
+ 	height:auto
+ 	}
+
+
+body{
+	background-color: white;
+	overflow-x: hidden;
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-size: 33px;
+    line-height: 1.1;
+    color: black;
+}
+
+.parallax {
+    
+    background-image: url("v2.jpg");
+    background-attachment: fixed;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+h2, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 10px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+}
+
+a{ color:#000; text-decoration:none; margin-left: 20px; margin-right: 20px;}
+ 
+ .carousel{ position:relative}
+
+ #mainCarousel .carousel-inner{ 
+ 	background-color:#1a1a1a}
+
+ #shopCarousel .carousel-inner{ 
+ 	background-color:#ebecee}
+
+ #actionCarousel .carousel-inner{ background-color:#029ece}
+
+ .carousel-inner{ position:relative; overflow:hidden; width:100%; z-index:1}
+
+ .carousel-inner >.item{ display:none; position:relative; -webkit-transition:opacity 0.5s linear; -ms-transition:opacity 0.5s linear; transition:opacity 0.5s linear; z-index:2}
+
+ .carousel-inner >.item >figure,#mainCarousel .carousel-inner >.item >figure img,.welcome >figure img{ position:relative; width:100%; height:auto; display:block; margin:0; text-align:right; z-index:3}
+
+ #productCarousel .carousel-inner >.item >figure{ position:relative; width:auto!important; max-width:90%; height:auto; margin:0 auto; text-align:center; display:block; z-index:3}
+
+ @media (max-width:1200px){.carousel-inner >.item >figure img{ width:100%; height:auto} #productCarousel .carousel-inner >.item >figure img{ width:auto; max-width:100%; height:auto}}
+
+ @media (max-width:767px){.carousel-inner >.item >figure img{ position:relative; bottom:0; right:0}
+
+ #productCarousel .carousel-inner >.item >figure img{ position:relative; z-index:4}}
+
+ @media (max-width:480px){#shopCarousel .carousel-inner >.item >figure img,
+
+ #actionCarousel .carousel-inner >.item >figure img{ width:120%; left:0}}
+
+ .carousel-inner >.item.grey >figure,.post-list{background-color:#ebecee}
+
+ .carousel-inner >.item.yellow >figure{background-color:#f3c202}
+
+ .carousel-inner >.item.orange >figure{background-color:#f26c51}
+
+ .carousel-inner >.item.green >figure{background-color:#719a3f}
+
+ .carousel-inner >.item.blue >figure{background-color:#029ece}
+
+ .carousel-inner > .item.black > figure {background-color: #000000;}
+
+ .carousel-inner > .item.darkgrey > figure {background-color: #999999;}
+
+ .carousel-inner >.item >img,.carousel-inner >.item >a >img{ line-height:1}
+
+ .carousel-inner >.active,.carousel-inner >.next,.carousel-inner >.prev{ display:block}
+
+ .carousel-inner >.active{ opacity:1}
+
+ .carousel-inner >.next,.carousel-inner >.prev{ position:absolute; top:0; width:100%}
+
+ .carousel-inner >.next,.carousel-inner >.prev{ opacity:0}
+
+ .carousel-inner >.next.left,.carousel-inner >.prev.right{ opacity:1}
+
+ .carousel-inner >.active.left,.carousel-inner >.active.right{ left:0; opacity:0; z-index:1} 
+
+ .carousel-indicators{  position:absolute;  bottom:5px;  left:20px;  z-index:15;  margin-left:0;  padding-left:0;  list-style:none;  text-align:center}
+
+ .carousel-indicators li{  display:inline-block;  width:13px;  height:13px;  margin:0 4px 0 0;  text-indent:-999px;  border:2px solid #fff;  cursor:pointer;  background-color:#000 \9;  background-color:rgba(0,0,0,0)}
+
+ #productCarousel .carousel-indicators{  width:100%;  text-align:center;  left:0;  bottom:0}
+
+ #productCarousel .carousel-indicators li{  width:70px;  height:auto;  margin:0 20px;  border:1px solid #eee;  border:none;  display:inline-block}
+
+ #productCarousel .carousel-indicators li >img{    width:auto;    max-width:100%;display:block}
+
+ @media (max-width:480px){#productCarousel .carousel-indicators li{width:50px;  height:auto;  margin:0 10px}}
+
+ .carousel-indicators .active{  margin:0 3px 0 0;  width:14px;  height:14px;  background-color:#fff}
+
+ #shopCarousel .carousel-indicators li{  border:2px solid #029ece}
+
+ #shopCarousel .carousel-indicators .active{  background-color:#029ece}
+
+ .carousel-caption{  position:absolute;  top:0;  left:0;  right:20%;  padding-top:10%;  padding-bottom:10%;  z-index:3}
+
+ .welcome .carousel-caption{  color:#fff;  padding-left:23px;  padding-top:20%;  padding-bottom:10%}
+
+ .item.grey .carousel-caption h4{color:#999}
+
+ .item.yellow .carousel-caption h4,.item.green .carousel-caption h4,.item.blue .carousel-caption h4,.item.orange .carousel-caption h4,.item.black .carousel-caption h4,.item.darkgrey .carousel-caption h4{color:#fff}
+
+ .item.black .carousel-caption h2,.item.darkgrey .carousel-caption h2 {color: #eee;}
+
+ #mainCarousel .carousel-caption{  left:15%;  right:15%;  z-index:10;  color:#fff;  text-align:center;  padding-top:15%;  padding-bottom:15%}
+
+ @media (min-width:768px) and (max-width:991px){   .carousel-caption{        right:40%;  padding-top:3%;   padding-bottom:3%}   
+
+ #mainCarousel .carousel-caption{        padding-top:12%;   padding-bottom:12%}   
+
+ .btn{     font-size:14px;     padding:10px}}
+
+ @media (max-width:767px){ .carousel-caption{    padding-top:5%;    padding-bottom:5%}   
+
+ #mainCarousel .carousel-caption{    padding-top:5%;    padding-bottom:5%}  
+ 
+ .btn{     margin-top:0;     font-size:12px;     padding:10px 12px}}
+ 
+ @media (max-width:480px){   #mainCarousel .carousel-caption{    padding-top:15%;    padding-bottom:15%}   
+ 
+ .welcome .carousel-caption{     padding-top:35%;     padding-bottom:35%}} 
+ 
+ #shopCarousel .carousel-caption .btn, #actionCarousel .carousel-caption .btn{  margin-left:20px;  margin-top:15px}
+
+ @media screen and (min-width:992px){  .carousel-caption{right:40%}  .carousel-indicators{bottom:5px}}
+
+#shopCarousel .carousel-inner{ background-color:#ebecee}
+
+@media (max-width:480px){#shopCarousel .carousel-inner >.item >figure img,#actionCarousel .carousel-inner >.item >figure img{ width:120%; left:0}}
+
+#shopCarousel .carousel-indicators li{  border:2px solid #029ece}
+
+#shopCarousel .carousel-indicators .active{  background-color:#029ece}
+
+#shopCarousel .carousel-caption .btn, #actionCarousel .carousel-caption .btn{  margin-left:20px;  margin-top:15px}
+
+/*abt section*/
+
+#aboutSection{padding:120px 0;background:#029ece url(/img/AboutBlue.png) top left no-repeat;background-size:cover;background-position:top left;color:#fff}
+
+#aboutSection h4{ margin-bottom:30px;padding-right:10%}#popularBikes{padding:40px 0;text-align:center}
+
+@media (max-width:767px){.blue-action,.padded,#aboutSection{padding:40px 0}}
+
+#menuToggle .btn{max-width:300px}
+
+/*popular section*/
+
+#popularBikes{padding:40px 0;text-align:center}#popularBikes header{text-align:left;padding:20px 0;display:block}#popularBikes .btn{margin:80px auto 40px}.blue-action{padding:80px 0;color:#fff;background-color:#029ece}
+
+
+.btn{ 
+	display:inline-block; 
+	margin-bottom:0; 
+	font-weight:normal; 
+	text-align:center; 
+	vertical-align:middle; 
+	cursor:pointer; 
+	background-image:none; 
+	border:2px solid transparent; 
+	white-space:nowrap; 
+	padding:14px 24px; font-size:17px; 
+	text-shadow:none; text-transform:uppercase; 
+	line-height:1.42857143; 
+	color:#fff; 
+	background-color:transparent; 
+	border-color:#fff}
+	
